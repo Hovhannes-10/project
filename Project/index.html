@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="content">
+    <div class="img">
+      <img src="images/hex0.jpg">
+    </div>
+    <div class="digits">
+      <div>
+        <h1>Question</h1>
+        <p>Given a natural number in the input. Sum the digits of this number. If the <br> turns out to be higher than 9, repeat the process for the new<br> number as many times as needed, until the sum amount of the digits is<br> equal or less than 9. Get the last number printed in the output. Use the<br> recursion method.</p>
+      </div>
+      <div>
+        <h1>Answer</h1>
+        <h2 class="result-digits"></h2>
+      </div>
+      <div class="writ">
+        <input type="text" id="givNumber" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>
+      </div>
+      <div>
+        <button onclick="findNumber()">Test </button>
+      </div>
+    </div>
+    <div class="triangle">
+      <div>
+        <h1>Question</h1>
+        <p>Write a program which gets 3 point coordinates in 2D coordinate system <br> the input and prints a triangle type as a result.</p>
+      </div>
+      <div>
+        <h1>Answer</h1>
+        <h2 class="result-triangle"></h2>
+      </div>
+      <div class="cords">
+        <div class="pointA">
+          <p>Point A</p>
+          <input type="text" id="AX" placeholder="X" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>           
+          <input type="text" id="AY" placeholder="Y" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"> 
+        </div>
+        <div class="pointB">
+          <p>Point B</p>
+          <input type="text" id="BX" placeholder="X" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>           
+          <input type="text" id="BY" placeholder="Y" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"> 
+        </div>
+        <div class="pointC">
+          <p>Point C</p>
+          <input type="text" id="CX" placeholder="X" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"/>           
+          <input type="text" id="CY" placeholder="Y" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"> 
+        </div>
+        <div>
+          <button onclick="runApp()">Test</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script_Number.js"></script>
+  <script src="js/script_Triangle.js"></script>  
+</body>
+</html>

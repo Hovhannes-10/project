@@ -1,0 +1,38 @@
+body {
+    font-family: 'Quantico',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+h2{
+    color: #E8822D;
+}
+.img>img{
+    width: 8%;
+    position: fixed;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.digits,.triangle{
+    padding: 5% 10%;
+}
+.cords>div>input{
+    width: 50px;
+}
+button{
+    text-align: center;
+    border: none;
+    padding: 8px 30px;
+    margin: 20px 0 0 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: #1D1A39;
+}
+#givNumber{
+    width: 100px;
+}
